@@ -1,0 +1,160 @@
+html::-webkit-scrollbar {
+    width: 5px;
+}
+   
+html::-webkit-scrollbar-track {
+    background:rgb(153, 153, 153);
+}
+
+html::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: rgb(101, 101, 101);
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 280px;
+    background: #f9fafb;
+    padding: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, button {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#qr-container {
+    margin: 10px 10px;
+}
+
+#download-btn, #copy-btn, #clear-history-btn {
+    display: none;
+    margin-top: 5px;
+}
+
+#clear-history-btn {
+    background: #dc3545;
+}
+
+#clear-history-btn:hover {
+    background: #c82333;
+}
+
+#theme-toggle {
+    width: fit-content;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(198, 198, 198);
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+    color: #fff;
+}
+
+.dark-mode input, .dark-mode select, .dark-mode button {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode button:hover {
+    background-color: #444;
+}
+
+.dark-mode h1 {
+    color: white;
+}
+
+.dark-mode #theme-toggle {
+    background: #333;
+}
+
+.color-pickers {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-pickers div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-pickers div input {
+    height: 40px;
+    width: 100%;
+}
+
+.color-pickers label {
+    cursor: pointer;
+}
+
+#history-list {
+    margin-top: 0;
+    padding-inline-start: 0;
+    width: 90%;
+}
+
+#history-list li {
+    list-style-type: none;
+    text-align: start;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+#history-list li:hover {
+    background-color: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.dark-mode #history-list li:hover {
+    background-color: #333;
+}

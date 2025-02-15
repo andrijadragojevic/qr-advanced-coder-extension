@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "QR - Advanced Coder",
+    "version": "1.0",
+    "description": "Generate a QR code for the current page or custom text.",
+    "permissions": ["tabs", "activeTab", "storage"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon-128.png",
+        "128": "icon-128.png"
+      }
+    }
+  }
+  

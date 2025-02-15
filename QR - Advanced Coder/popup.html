@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <script defer src="qrcode.min.js"></script>
+    <script defer src="popup.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="popup-container">
+        <!-- Theme Switch -->
+        <button id="theme-toggle">🌙</button>
+
+        <h1>QR - Advanced Coder</h1>
+
+        <input type="text" id="qr-input" placeholder="Enter URL or text..." autofocus>
+
+        <div id="qr-container"></div>
+
+        <button id="download-btn" style="display: none;">Download QR</button>
+        <button id="copy-btn" style="display: none;">Copy QR to Clipboard</button>
+
+        <h3>Customize</h3>
+        <div class="color-pickers">
+            <div>
+                <label for="fg-color">Code Color:</label>
+                <input type="color" id="fg-color" value="#000000">
+            </div>
+            <div>
+                <label for="bg-color">Background Color:</label>
+                <input type="color" id="bg-color" value="#ffffff">
+            </div>
+        </div>
+
+        <label for="qr-size">QR Code Size:</label>
+        <select id="qr-size">
+            <option value="150">Small (150px)</option>
+            <option value="200" selected>Medium (200px)</option>
+            <option value="300">Large (300px)</option>
+        </select>
+
+        <h3>Recent QR Codes</h3>
+        <ul id="history-list"></ul>
+        <button id="clear-history-btn">Clear History</button>
+    </div>
+</body>
+</html>
